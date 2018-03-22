@@ -15,14 +15,14 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
 	var myName = prompt('Please enter your name.');
 	localStorage.setItem('name', myName);
-	myHeading.textContent = 'CSCS1240 Website, ' + myName;
+	myHeading.textContent = 'Welcome to CSCS1240 Website, ' + myName;
 }
 
 if(!localStorage.getItem('name')) {
 	setUserName();
 } else {
 	var storedName = localStorage.getItem('name');
-	myHeading.textContent = 'CSCS1240 Website, ' + storedName;
+	myHeading.textContent = 'Welcome to CSCS1240 Website, ' + storedName;
 }
 
 myButton.onclick = function() {
